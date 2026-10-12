@@ -1,75 +1,94 @@
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-body {
-   direction: rtl;
+
+@font-face {
+    font-family: "Vazirmatn";
+    src: url("../font/Vazirmatn-VariableFont_wght.ttf") format("truetype");
+    font-weight: 700 800;
+    font-style: normal;
 }
 
-header{
-    background-color: aliceblue;
-    border-bottom: gray;
+body {
+    direction: rtl;
+    background-color: #f8fafc;
+    font-family: "Vazirmatn", sans-serif;
+}
+
+.header {
+    background-color: white;
+    shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     display: flex;
-  align-items: center;
-  gap: 16px;
-  justify-content: space-between;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 50px;
+}
+
+.right-side {
+    display: flex;
+    align-items: center;
+    gap: 50px;
 }
 
 .Griffin {
     text-decoration: none;
-    margin-left: 20px;
     font-weight: bold;
     color: green;
     font-size: 24px;
 }
 
-.right-side{
- padding: 32px;
- display: flex;
- 
-}
-
-.right-header-buttons {
+.left-side-buttons {
     display: flex;
-    gap: 20px;
-    
+    gap: 16px;
 }
 
-.right-header-buttons button:hover{
-    color: green;
+.right-side-buttons {
+    display: flex;
+    gap: 24px;
 }
 
-.right-header-buttons button {
-    
-    
-    
-    
-    background: transparent;
+.right-side-buttons button{
+    background-color: transparent;
     border: none;
-    font-size: 14px;
-    
-    
-  
+    padding: 8px 16px;
+    font-size: 16px;
+    font-family: inherit;
 }
-
-
+.right-side-buttons button:hover {
+    color: green;
+    cursor: pointer;
+}
+.left-side-buttons button {
+   border: none;
+  border-radius: 16px;    
+    padding: 8px 16px;
+    font-size: 16px;
+    font-family: inherit;
+}
+.left-side-buttons button:hover {
+    cursor: pointer;
+}
 
 .left-side {
-    display: flex;
-    justify-content: left;
-    font-size: 14px;
+    
+    
+    
+}
+.sabad {
+    
+    background-color: #e8f8f5;
+    color: #0d7c66;
+    
+}
+.sign-up {
+    background-color: rgb(212, 212, 212);
+    color: black;
     
 }
 
-.sabad{
-    background-color: greenyellow;
-    padding: 4px;
-    margin-left: 12px;
-    border-color: green;
-    font-size: 16px;
-    border-radius: 6px;
-}
 
-.sign-up{
-    font-size: 16px;
-}
+
+
+
