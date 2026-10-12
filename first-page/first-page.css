@@ -114,7 +114,7 @@ body {
 }
 
 .filters {
-    width: min(100% - 2rem, 200px);
+    width: min(100% - 2rem, 280px);
     margin: 24px max(1rem, calc((100% - 1200px) / 2)) 24px auto;
     padding: 24px;
     background-color: white;
