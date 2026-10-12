@@ -22,82 +22,158 @@ body {
     overflow: hidden;
 }
 
-header {
+.container {
+    width: min(100% - 2rem, 1200px);
+    margin-inline: auto;
+}
+
+.header {
     background-color: white;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-    display: flex;
     flex-shrink: 0;
+    padding: 16px 0;
+}
+
+.header__inner {
+    display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 16px 50px;
 }
 
-.right-side,
-.right-side-buttons,
-.left-side-buttons {
+.header__nav-area,
+.nav,
+.actions {
     display: flex;
     align-items: center;
 }
 
-.right-side {
+.header__nav-area {
     gap: 50px;
 }
 
-.Griffin {
+.brand {
     text-decoration: none;
     font-weight: bold;
     color: green;
     font-size: 24px;
 }
 
-.right-side-buttons {
+.nav {
     gap: 24px;
 }
 
-.left-side-buttons {
+.actions {
     gap: 16px;
 }
 
-.right-side-buttons button,
-.left-side-buttons button {
+.nav__button,
+.actions__button {
     border: 0;
     padding: 8px 16px;
     font: inherit;
     cursor: pointer;
 }
 
-.right-side-buttons button {
+.nav__button {
     background-color: transparent;
 }
 
-.right-side-buttons button:hover {
+.nav__button:hover {
     color: green;
 }
 
-.sabad {
+.actions__button--cart {
     background-color: #e8f8f5;
     color: #0d7c66;
     border-radius: 16px;
 }
 
-.sign-up {
+.actions__button--login {
     background-color: #d4d4d4;
     color: black;
     border-radius: 16px;
 }
 
-.content {
+.main {
     flex: 1;
     min-height: 0;
     overflow-y: auto;
 }
 
-footer {
+.footer {
     background-color: black;
     color: white;
-    display: flex;
     flex-shrink: 0;
+    padding: 16px 0;
+}
+
+.footer__inner {
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px 50px;
+}
+
+.filters {
+    width: min(100% - 2rem, 200px);
+    margin: 24px max(1rem, calc((100% - 1200px) / 2)) 24px auto;
+    padding: 24px;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.filters__group {
+    margin-bottom: 24px;
+}
+
+.filters__title {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.filters__options {
+    display: flex;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.filters__options--checks {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.filters__options--radios {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.filters__option {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 8px;
+    color: #6b7280;
+}
+
+.filters__input {
+    cursor: pointer;
+}
+
+.intro {
+    margin-top: 24px;
+}
+
+.intro__breadcrumb,
+.intro__text {
+    margin-bottom: 8px;
+    color: #6b7280;
+}
+
+.filters__group {
+    display: flex;
+    flex-direction: column;
+}
+hr {
+    border: 0;
+    border-top: 0.5px solid gray;
 }
