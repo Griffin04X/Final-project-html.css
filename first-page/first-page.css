@@ -7,7 +7,7 @@
 @font-face {
     font-family: "Vazirmatn";
     src: url("../font/Vazirmatn-VariableFont_wght.ttf") format("truetype");
-    font-weight: 700 800;
+    font-weight: 100 900;
     font-style: normal;
 }
 
@@ -15,20 +15,31 @@ body {
     direction: rtl;
     background-color: #f8fafc;
     font-family: "Vazirmatn", sans-serif;
+    height: 100vh;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 }
 
-.header {
+header {
     background-color: white;
-    shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     display: flex;
+    flex-shrink: 0;
     align-items: center;
     justify-content: space-between;
     padding: 16px 50px;
 }
 
-.right-side {
+.right-side,
+.right-side-buttons,
+.left-side-buttons {
     display: flex;
     align-items: center;
+}
+
+.right-side {
     gap: 50px;
 }
 
@@ -39,56 +50,54 @@ body {
     font-size: 24px;
 }
 
-.left-side-buttons {
-    display: flex;
-    gap: 16px;
-}
-
 .right-side-buttons {
-    display: flex;
     gap: 24px;
 }
 
-.right-side-buttons button{
-    background-color: transparent;
-    border: none;
-    padding: 8px 16px;
-    font-size: 16px;
-    font-family: inherit;
+.left-side-buttons {
+    gap: 16px;
 }
+
+.right-side-buttons button,
+.left-side-buttons button {
+    border: 0;
+    padding: 8px 16px;
+    font: inherit;
+    cursor: pointer;
+}
+
+.right-side-buttons button {
+    background-color: transparent;
+}
+
 .right-side-buttons button:hover {
     color: green;
-    cursor: pointer;
-}
-.left-side-buttons button {
-   border: none;
-  border-radius: 16px;    
-    padding: 8px 16px;
-    font-size: 16px;
-    font-family: inherit;
-}
-.left-side-buttons button:hover {
-    cursor: pointer;
 }
 
-.left-side {
-    
-    
-    
-}
 .sabad {
-    
     background-color: #e8f8f5;
     color: #0d7c66;
-    
+    border-radius: 16px;
 }
+
 .sign-up {
-    background-color: rgb(212, 212, 212);
+    background-color: #d4d4d4;
     color: black;
-    
+    border-radius: 16px;
 }
 
+.content {
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
+}
 
-
-
-
+footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 50px;
+}
