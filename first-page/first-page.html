@@ -8,7 +8,7 @@
 </head>
 <body>
     <header class="header">
-        <div class="container header__inner">
+        <div class="header__inner">
             <div class="header__nav-area">
                 <a class="brand" href="first-page.html">Griffin</a>
                 <nav class="nav" aria-label="ناوبری اصلی">
@@ -26,7 +26,7 @@
     </header>
 
     <main class="main">
-        <div class="container">
+        <div>
             <section class="intro">
                 <p class="intro__breadcrumb">خانه/فروشگاه</p>
                 <h1 class="intro__title">فروشگاه</h1>
@@ -34,56 +34,99 @@
             </section>
         </div>
 
-        <aside class="filters">
-            <section class="filters__group filters__group--category">
-                <h2 class="filters__title">فیلتر محصولات</h2>
+        <div class="shop-layout">
+            <aside class="filters">
+                <section class="filters__group filters__group--category">
+                    <h2 class="filters__title">فیلتر محصولات</h2>
+                    <hr>
+                    <div class="filters__options filters__options--checks">
+                        <label class="filters__option">
+                            دیجیتال و گجت
+                            <input type="checkbox" id="checkbox-1" class="filters__input filters__input--check">
+                        </label>
+                        <label class="filters__option">
+                            خانه و سبک زندگی
+                            <input type="checkbox" id="checkbox-2" class="filters__input filters__input--check">
+                        </label>
+                        <label class="filters__option">
+                            لوازم شخصی
+                            <input type="checkbox" id="checkbox-3" class="filters__input filters__input--check">
+                        </label>
+                    </div>
+                </section>
                 <hr>
-                <div class="filters__options filters__options--checks">
-                    <label class="filters__option">
-                        دیجیتال و گجت
-                        <input type="checkbox" id="checkbox-1" class="filters__input filters__input--check">
-                    </label>
-                    <label class="filters__option">
-                        خانه و سبک زندگی
-                        <input type="checkbox" id="checkbox-2" class="filters__input filters__input--check">
-                    </label>
-                    <label class="filters__option">
-                        لوازم شخصی
-                        <input type="checkbox" id="checkbox-3" class="filters__input filters__input--check">
-                    </label>
-                </div>
-            </section>
-            <hr>
-            <section class="filters__group filters__group--price">
-                <h2 class="filters__title">محدوده قیمت</h2>
-                <div class="filters__options filters__options--radios">
-                    <label class="filters__option">
-                        کمتر از 2 میلیون
-                        <input type="radio" name="price-range" id="radio-1" class="filters__input filters__input--radio">
-                    </label>
-                    <label class="filters__option">
-                        2 تا 5 میلیون
-                        <input type="radio" name="price-range" id="radio-2" class="filters__input filters__input--radio">
-                    </label>
-                    <label class="filters__option">
-                        5 میلیون به بالا
-                        <input type="radio" name="price-range" id="radio-3" class="filters__input filters__input--radio">
-                    </label>
-                </div>
-            </section>
-            <hr>
-            <section class="filters__group filters__group--rating">
-                <h2 class="filters__title">امتیاز خریدار</h2>
-                <div class="filters__options filters__options--checks">
-                    <label class="filters__option">
-                        4 ستاره به بالا
-                        <input type="checkbox" id="buyer-rating" class="filters__input filters__input--rating">
-                    </label>
-                </div>
-            </section>
-        </aside>
-    </main>
+                <section class="filters__group filters__group--price">
+                    <h2 class="filters__title">محدوده قیمت</h2>
+                    <div class="filters__options filters__options--radios">
+                        <label class="filters__option">
+                            کمتر از 2 میلیون
+                            <input type="radio" name="price-range" id="radio-1" class="filters__input filters__input--radio">
+                        </label>
+                        <label class="filters__option">
+                            2 تا 5 میلیون
+                            <input type="radio" name="price-range" id="radio-2" class="filters__input filters__input--radio">
+                        </label>
+                        <label class="filters__option">
+                            5 میلیون به بالا
+                            <input type="radio" name="price-range" id="radio-3" class="filters__input filters__input--radio">
+                        </label>
+                    </div>
+                </section>
+                <hr>
+                <section class="filters__group filters__group--rating">
+                    <h2 class="filters__title">امتیاز خریدار</h2>
+                    <div class="filters__options filters__options--checks">
+                        <label class="filters__option">
+                            4 ستاره به بالا
+                            <input type="checkbox" id="buyer-rating" class="filters__input filters__input--rating">
+                        </label>
+                    </div>
+                </section>
+            </aside>
 
+            <div class="product-results">
+                <nav class="search-bar" aria-label="جستجوی محصولات">
+                    <input type="search" placeholder="جست و جو در محصولات" class="search-bar__input">
+                </nav>
+                <div class="gray-p">
+                    <p>مرتب سازی: پرفروشترین</p>
+                    <p>نمایش 6 محصول</p>
+                </div>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <img src="images/1d7a6151964f2dd6ca605739426a895b77eba04d_1786538646.webp" alt="Product 1" class="product-card__image">
+                        <h3 class="product-card__title">محصول 1</h3>
+                        <p class="product-card__price">2,000,000 تومان</p>
+                    </div>
+                    <div class="product-card">
+                        <img src="images/461ccc868f9796deff60f9402c58c2045b53f881_1786538647.webp" alt="Product 2" class="product-card__image">
+                        <h3 class="product-card__title">محصول 2</h3>
+                        <p class="product-card__price">3,500,000 تومان</p>
+                    </div>
+                    <div class="product-card">
+                        <img src="images/509ef6a33068c0d055e624baf07569faa72ea082_1786538650.webp" alt="Product 3" class="product-card__image">
+                        <h3 class="product-card__title">محصول 3</h3>
+                        <p class="product-card__price">5,000,000 تومان</p>
+                    </div>
+                    <div class="product-card">
+                        <img src="images/c6b3705fc24661ff7a877ce175fd715c9b20a820_1786538651.webp" alt="Product 4" class="product-card__image">
+                        <h3 class="product-card__title">محصول 4</h3>
+                        <p class="product-card__price">1,500,000 تومان</p>
+                    </div>
+                    <div class="product-card">
+                        <img src="images/e0562b9710c61c64020b15ec5715db7dea835d68_1786538654.webp" alt="Product 5" class="product-card__image">
+                        <h3 class="product-card__title">محصول 5</h3>
+                        <p class="product-card__price">4,000,000 تومان</p>
+                    </div>
+                    <div class="product-card">
+                        <img src="images/e23b53f685b4a850545cd550b4249c5316aec61f_1786538642.webp" alt="Product 6" class="product-card__image">
+                        <h3 class="product-card__title">محصول 6</h3>
+                        <p class="product-card__price">2,500,000 تومان</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
     <footer class="footer">
         <div class="container footer__inner">
             <p>Griffin : خرید ساده و مطمئن</p>
