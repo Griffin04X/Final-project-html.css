@@ -303,7 +303,7 @@ body {
     padding: 16px;
     background-color: white;
     border-radius: 16px;
-    shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 .user-name{
     font-weight: bold;
@@ -327,7 +327,15 @@ body {
     font-weight: bold;
     display: block;
 }
-.user-review-2{
-    color: gray;
-    display: 
+.user-rating__header{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+
+.product-info__rating-2{
+    color: #f59e0b;
+   
+    
 }

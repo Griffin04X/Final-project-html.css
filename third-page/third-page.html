@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="third-page.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__inner">
+            <div class="header__nav-area">
+                <a class="brand" href="../first-page/first-page.html">Griffin</a>
+                <nav class="nav" aria-label="ناوبری اصلی">
+                    <button class="nav__button">خانه</button>
+                    <button class="nav__button">فروشگاه</button>
+                    <button class="nav__button">دسته بندی</button>
+                    <button class="nav__button">درباره ما</button>
+                </nav>
+            </div>
+            <div class="actions">
+                <button class="actions__button actions__button--cart">سبد خرید</button>
+                <button class="actions__button actions__button--login">ورود</button>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+
+        <form class="card" action="third-page.html" method="post">
+            <h2> حساب کاربری </h2>
+              <p> برای خرید سریع تر ,حساب بازاریتو رابسازید </p>
+
+            <label class="email" for="email"> ایمیل:</label>
+            <input type="email"  name="email" placeholder="name@example.com" required>
+
+            <label for="number"> شماره همراه:</label>
+            <input type="tel" placeholder="شماره همراه خود را وارد کنید"  name="number" required>
+
+            <label for="password">رمز عبور:</label>
+            <input type="password" placeholder="رمز عبور خود را وارد کنید" name="password" min="8" max="64" required>
+
+            <label for="confirm-password"> تکرار رمز عبور:</label>
+            <input type="password" placeholder=" رمز عبور خود را دوباره وارد کنید" name="password" min="8" max="64" required>
+
+            <div class="card__actions">
+                <button class="reset"  type="reset"> پاک کردن </button>
+                <button class="log-in" type="submit">ثبت نام</button>
+                
+            </div>
+        </form>
+        
+    </main>
+    <footer class="footer">
+        <div class="container footer__inner">
+            <p>Griffin : خرید ساده و مطمئن</p>
+            <p>پشتیبانی.قوانین و شرایط.اینستاگرام</p>
+            <p>1405</p>
+        </div>
+    </footer>
+</body>
+</html>
