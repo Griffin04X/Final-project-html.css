@@ -24,7 +24,13 @@ body {
 
 .container {
     width: min(100% - 2rem, 1200px);
-    margin-inline: auto;
+
+}
+.container__p {
+    font-size: large;
+    padding: 8px;
+    color: gray;
+    margin-top: 16px;
 }
 
 .header {
@@ -117,4 +123,139 @@ body {
     .footer__inner {
         width: calc(100% - 2rem);
     }
+}
+
+.main {
+    width: calc(100% - 200px);
+    margin-inline: auto;
+    padding-inline-end: 10px;
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
+
+}
+
+.gallery {
+    display: flex;
+    direction: rtl;
+    align-items: flex-start;
+    gap: 32px;
+    margin-top: 32px;
+}
+
+.radio {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+
+    flex: 0 0 auto;
+}
+
+.radio__option {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.radio__option input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+}
+
+.radio__option img {
+    display: block;
+    width: 100px;
+    max-width: 100%;
+    height: auto;
+    border: 2px solid transparent;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.radio__option input:checked + img {
+    border-color: #0d7c66;
+}
+
+.radio__option img,
+.main_img img {
+    border-radius: 16px;
+}
+
+
+
+
+.main_img{
+    flex: 0 0 400px;
+    width: 400px;
+    height: 400px;
+}
+.main_img img{
+    width: 100%;
+    height: 100%;
+    display: none;
+    object-fit: contain;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.gallery:has(.radio__option--1 input:checked) .main_img .img_1 {
+    display: block;
+}
+
+.gallery:has(.radio__option--2 input:checked) .main_img .img_2 {
+    display: block;
+}
+
+.gallery:has(.radio__option--3 input:checked) .main_img .img_3 {
+    display: block;
+}
+
+.product-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    flex: 0 0 auto;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+}
+
+.label_1 {
+    flex: 0 0 auto;
+    display: inline-block;
+    background-color: greenyellow;
+    padding: 2px 4px;
+    border-radius: 8px;
+    color: #0d7c66;
+}
+.product-info__rating-row {
+    display: flex;
+    direction: rtl;
+    align-items: center;
+    
+    gap: 8px;
+}
+
+.product-info__rating {
+    color: #f59e0b;
+}
+
+.product-info__category_2 {
+    color: gray;
+}
+.product-info__description{
+    color: gray;
 }
