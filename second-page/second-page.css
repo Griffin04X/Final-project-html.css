@@ -48,6 +48,10 @@ body {
     justify-content: space-between;
 }
 
+.header a {
+    text-decoration: none;
+}
+
 .header__nav-area,
 .nav,
 .actions {
@@ -103,7 +107,7 @@ body {
 }
 
 .footer {
-    background-color: black;
+    background-color: #14213D;
     color: white;
     flex-shrink: 0;
     margin-top: auto;
@@ -116,13 +120,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-@media (max-width: 600px) {
-    .header__inner,
-    .footer__inner {
-        width: calc(100% - 2rem);
-    }
 }
 
 .main {
@@ -275,6 +272,7 @@ body {
 
 .product-info__add-to-cart {
     display: inline-block;
+    text-decoration: none;
     background-color: #0d7c66;
     color: white;
     border: none;
@@ -321,7 +319,7 @@ body {
     padding: 16px;
     background-color: white;
     border-radius: 16px;
-    shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 .user-name-2{
     font-weight: bold;
@@ -338,4 +336,83 @@ body {
     color: #f59e0b;
    
     
+}
+
+@media (max-width: 600px) {
+    .header__inner,
+    .footer__inner,
+    .main {
+        width: calc(100% - 2rem);
+    }
+
+    .header__inner {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .header__nav-area {
+        width: 100%;
+        justify-content: space-between;
+        gap: 8px;
+    }
+
+    .nav {
+        gap: 4px;
+    }
+
+    .nav__button,
+    .actions__button {
+        padding: 6px 8px;
+        font-size: 14px;
+    }
+
+    .actions {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .main {
+        padding-inline: 0;
+    }
+
+    .gallery {
+        flex-direction: column;
+        gap: 16px;
+        margin-top: 16px;
+    }
+
+    .radio {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .radio__option img {
+        width: 72px;
+    }
+
+    .main_img {
+        width: min(100%, 400px);
+        height: auto;
+        aspect-ratio: 1;
+        flex-basis: auto;
+        align-self: center;
+    }
+
+    .product-details {
+        width: 100%;
+    }
+
+    .product-info__purchase-row {
+        flex-wrap: wrap;
+    }
+
+    .product-price {
+        font-size: 20px;
+    }
+
+    .footer__inner {
+        flex-wrap: wrap;
+        gap: 8px 16px;
+    }
 }

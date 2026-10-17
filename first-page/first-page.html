@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="first-page.css">
+    <link rel="stylesheet" href="dark-mode.css" media="(prefers-color-scheme: dark)">
 </head>
 <body>
     <header class="header">
@@ -20,7 +21,7 @@
             </div>
             <div class="actions">
                 <button class="actions__button actions__button--cart">سبد خرید</button>
-                <button class="actions__button actions__button--login">ورود</button>
+                <a class="actions__button actions__button--login" href="../third-page/third-page.html">ورود</a>
             </div>
         </div>
     </header>
@@ -42,15 +43,15 @@
                     <div class="filters__options filters__options--checks">
                         <label class="filters__option">
                             دیجیتال و گجت
-                            <input type="checkbox" id="checkbox-1" class="filters__input filters__input--check">
+                            <input type="checkbox" id="checkbox-1">
                         </label>
                         <label class="filters__option">
                             خانه و سبک زندگی
-                            <input type="checkbox" id="checkbox-2" class="filters__input filters__input--check">
+                            <input type="checkbox" id="checkbox-2">
                         </label>
                         <label class="filters__option">
                             لوازم شخصی
-                            <input type="checkbox" id="checkbox-3" class="filters__input filters__input--check">
+                            <input type="checkbox" id="checkbox-3">
                         </label>
                     </div>
                 </section>
@@ -60,15 +61,15 @@
                     <div class="filters__options filters__options--radios">
                         <label class="filters__option">
                             کمتر از 2 میلیون
-                            <input type="radio" name="price-range" id="radio-1" class="filters__input filters__input--radio">
+                            <input type="radio" name="price-range" id="radio-1">
                         </label>
                         <label class="filters__option">
                             2 تا 5 میلیون
-                            <input type="radio" name="price-range" id="radio-2" class="filters__input filters__input--radio">
+                            <input type="radio" name="price-range" id="radio-2">
                         </label>
                         <label class="filters__option">
                             5 میلیون به بالا
-                            <input type="radio" name="price-range" id="radio-3" class="filters__input filters__input--radio">
+                            <input type="radio" name="price-range" id="radio-3">
                         </label>
                     </div>
                 </section>
@@ -78,7 +79,7 @@
                     <div class="filters__options filters__options--checks">
                         <label class="filters__option">
                             4 ستاره به بالا
-                            <input type="checkbox" id="buyer-rating" class="filters__input filters__input--rating">
+                            <input type="checkbox" id="buyer-rating">
                         </label>
                     </div>
                 </section>
