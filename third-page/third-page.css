@@ -32,7 +32,7 @@ body {
     padding: 16px 0;
 }
 
-.header__inner {
+.bar {
     width: calc(100% - 200px);
     margin-inline: auto;
     display: flex;
@@ -44,14 +44,14 @@ body {
     text-decoration: none;
 }
 
-.header__nav-area,
+.menu,
 .nav,
 .actions {
     display: flex;
     align-items: center;
 }
 
-.header__nav-area {
+.menu {
     gap: 50px;
 }
 
@@ -106,7 +106,7 @@ body {
     padding: 16px 0;
 }
 
-.footer__inner {
+footer .inner {
     width: calc(100% - 200px);
     margin-inline: auto;
     display: flex;
@@ -198,17 +198,17 @@ body {
 }
 
 @media (max-width: 600px) {
-    .header__inner,
-    .footer__inner {
+    .bar,
+    footer .inner {
         width: calc(100% - 2rem);
     }
 
-    .header__inner {
+    .bar {
         flex-wrap: wrap;
         gap: 12px;
     }
 
-    .header__nav-area {
+    .menu {
         width: 100%;
         justify-content: space-between;
         gap: 8px;
@@ -238,8 +238,81 @@ body {
         flex-wrap: wrap;
     }
 
-    .footer__inner {
+    footer .inner {
         flex-wrap: wrap;
         gap: 8px 16px;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body,
+    .main {
+        background-color: #0f172a;
+        color: #fff;
+    }
+
+    .header {
+        background-color: #1e293b;
+    }
+
+    .footer {
+        background-color: #14213d;
+    }
+
+    .brand {
+        color: #2dd4bf;
+    }
+
+    .nav__button {
+        color: #fff;
+    }
+
+    .actions__button--login {
+        background-color: transparent;
+        color: #fff;
+    }
+
+    .actions__button--cart {
+        background-color: #123d3b;
+        color: #29ccb3;
+    }
+
+    .card {
+        background-color: #1e293b;
+    }
+
+    .card input {
+        background-color: transparent;
+        border-color: gray;
+        color: #fff;
+    }
+
+    .card input:focus:placeholder-shown {
+        border-color: #2dd4bf;
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(45, 212, 191, 0.2);
+    }
+
+    .card input:not(:placeholder-shown):valid {
+        border-color: #4ade80;
+        box-shadow: none;
+        outline: none;
+    }
+
+    .card input:not(:placeholder-shown):invalid {
+        border-color: #e53935;
+        box-shadow: none;
+        outline: none;
+    }
+
+    .reset {
+        background-color: transparent;
+        color: #fff;
+        border-color: #29ccb3;
+    }
+
+    input::placeholder {
+        color: #9ca3af;
+        opacity: 1;
     }
 }

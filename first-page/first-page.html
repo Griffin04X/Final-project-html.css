@@ -5,13 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="first-page.css">
-    <link rel="stylesheet" href="dark-mode.css" media="(prefers-color-scheme: dark)">
 </head>
 <body>
     <header class="header">
-        <div class="header__inner">
-            <div class="header__nav-area">
-                <a class="brand" href="first-page.html">Griffin</a>
+        <div class="bar">
+            <div class="menu">
+                <a class="brand" href="first-page.html">بازارینو</a>
                 <nav class="nav" aria-label="ناوبری اصلی">
                     <button class="nav__button">خانه</button>
                     <button class="nav__button">فروشگاه</button>
@@ -35,67 +34,67 @@
             </section>
         </div>
 
-        <div class="shop-layout">
+        <div class="shop">
             <aside class="filters">
-                <section class="filters__group filters__group--category">
+                <section class="group category">
                     <h2 class="filters__title">فیلتر محصولات</h2>
                     <hr>
-                    <div class="filters__options filters__options--checks">
+                    <div class="options checks">
                         <label class="filters__option">
                             دیجیتال و گجت
-                            <input type="checkbox" id="checkbox-1">
+                            <input type="checkbox">
                         </label>
                         <label class="filters__option">
                             خانه و سبک زندگی
-                            <input type="checkbox" id="checkbox-2">
+                            <input type="checkbox">
                         </label>
                         <label class="filters__option">
                             لوازم شخصی
-                            <input type="checkbox" id="checkbox-3">
+                            <input type="checkbox">
                         </label>
                     </div>
                 </section>
                 <hr>
-                <section class="filters__group filters__group--price">
+                <section class="group price">
                     <h2 class="filters__title">محدوده قیمت</h2>
-                    <div class="filters__options filters__options--radios">
+                    <div class="options radios">
                         <label class="filters__option">
                             کمتر از 2 میلیون
-                            <input type="radio" name="price-range" id="radio-1">
+                            <input type="radio" name="price-range">
                         </label>
                         <label class="filters__option">
                             2 تا 5 میلیون
-                            <input type="radio" name="price-range" id="radio-2">
+                            <input type="radio" name="price-range">
                         </label>
                         <label class="filters__option">
                             5 میلیون به بالا
-                            <input type="radio" name="price-range" id="radio-3">
+                            <input type="radio" name="price-range">
                         </label>
                     </div>
                 </section>
                 <hr>
-                <section class="filters__group filters__group--rating">
+                <section class="group score">
                     <h2 class="filters__title">امتیاز خریدار</h2>
-                    <div class="filters__options filters__options--checks">
+                    <div class="options checks">
                         <label class="filters__option">
                             4 ستاره به بالا
-                            <input type="checkbox" id="buyer-rating">
+                            <input type="checkbox">
                         </label>
                     </div>
                 </section>
             </aside>
 
-            <div class="product-results">
-                <nav class="search-bar" aria-label="جستجوی محصولات">
+            <div class="results">
+                <nav class="search" aria-label="جستجوی محصولات">
                     <input type="search" placeholder="جست و جو در محصولات" class="search-bar__input">
                 </nav>
-                <div class="gray-p">
+                <div class="info">
                     <p>مرتب سازی: پرفروشترین</p>
                     <p>نمایش 6 محصول</p>
                 </div>
-                <div class="product-grid">
-                    <a href="/second-page/second-page.html" class="product-card-link">
-                        <div class="product-card">
+                <div class="grid">
+                    <a href="/second-page/second-page.html" class="link">
+                        <div class="card">
                             <img src="images/1d7a6151964f2dd6ca605739426a895b77eba04d_1786538646.webp" alt="Product 1" class="product-card__image">
                             <p class="label">ارسال رایگان</p>
                             <h3 class="product-card__title">محصول 1</h3>
@@ -103,8 +102,8 @@
                             <div class="rating"><p>★ 4/5 </p></div>
                         </div>
                     </a>
-                    <a href="/second-page/second-page.html" class="product-card-link">
-                        <div class="product-card">
+                    <a href="/second-page/second-page.html" class="link">
+                        <div class="card">
                             <img src="images/461ccc868f9796deff60f9402c58c2045b53f881_1786538647.webp" alt="Product 2" class="product-card__image">
                             <p class="label">ارسال رایگان</p>
                             <h3 class="product-card__title">محصول 2</h3>
@@ -112,8 +111,8 @@
                             <div class="rating"><p>★ 4/2 </p></div>
                         </div>
                     </a>
-                    <a href="/second-page/second-page.html" class="product-card-link">
-                        <div class="product-card">
+                    <a href="/second-page/second-page.html" class="link">
+                        <div class="card">
                             <img src="images/509ef6a33068c0d055e624baf07569faa72ea082_1786538650.webp" alt="Product 3" class="product-card__image">
                             <p class="label">ارسال رایگان</p>
                             <h3 class="product-card__title">محصول 3</h3>
@@ -121,8 +120,8 @@
                             <div class="rating"><p>★ 4/0 </p></div>
                         </div>
                     </a>
-                    <a href="/second-page/second-page.html" class="product-card-link">
-                        <div class="product-card">
+                    <a href="/second-page/second-page.html" class="link">
+                        <div class="card">
                             <img src="images/c6b3705fc24661ff7a877ce175fd715c9b20a820_1786538651.webp" alt="Product 4" class="product-card__image">
                             <p class="label">ارسال رایگان</p>
                             <h3 class="product-card__title">محصول 4</h3>
@@ -130,8 +129,8 @@
                             <div class="rating"><p>★ 3/8 </p></div>
                         </div>
                     </a>
-                    <a href="/second-page/second-page.html" class="product-card-link">
-                        <div class="product-card">
+                    <a href="/second-page/second-page.html" class="link">
+                        <div class="card">
                             <img src="images/e0562b9710c61c64020b15ec5715db7dea835d68_1786538654.webp" alt="Product 5" class="product-card__image">
                             <p class="label">ارسال رایگان</p>
                             <h3 class="product-card__title">محصول 5</h3>
@@ -139,8 +138,8 @@
                             <div class="rating"><p>★ 4/5 </p></div>
                         </div>
                     </a>
-                    <a href="/second-page/second-page.html" class="product-card-link">
-                        <div class="product-card">
+                    <a href="/second-page/second-page.html" class="link">
+                        <div class="card">
                             <img src="images/e23b53f685b4a850545cd550b4249c5316aec61f_1786538642.webp" alt="Product 6" class="product-card__image">
                             <p class="label">ارسال رایگان</p>
                             <h3 class="product-card__title">محصول 6</h3>
@@ -153,7 +152,7 @@
         </div>
     </main>
     <footer class="footer">
-        <div class="container footer__inner">
+        <div class="container inner">
             <p>Griffin : خرید ساده و مطمئن</p>
             <p>پشتیبانی.قوانین و شرایط.اینستاگرام</p>
             <p>1405</p>
