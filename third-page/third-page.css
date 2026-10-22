@@ -189,7 +189,7 @@ footer .inner {
 @media (max-width: 600px) {
     .bar,
     footer .inner {
-        width: calc(100% - 2rem);
+        width:100% ;
     }
 
     .bar {
@@ -219,7 +219,7 @@ footer .inner {
     }
 
     .card {
-        width: min(400px, calc(100% - 2rem));
+        width: min(400px,100% );
         padding: 24px 16px;
     }
 
