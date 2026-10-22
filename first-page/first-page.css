@@ -23,7 +23,7 @@ body {
 }
 
 .container {
-    width: min(100% - 2rem, 1200px);
+    width: min(100%, 1200px);
     margin-inline: auto;
 }
 
@@ -228,6 +228,7 @@ input[type="radio"]:not(:checked) {
     border: 1px solid #d1d5db;
     border-radius: 16px;
     font: inherit;
+    color: inherit;
 }
 
 hr {
@@ -294,7 +295,7 @@ hr {
 .rating {
     position: absolute;
     bottom: 16px;
-    left: 16px;
+    inset-inline-end:16px;
     display: flex;
     align-items: center;
     gap: 4px;
@@ -318,7 +319,7 @@ hr {
     .bar,
     footer .inner,
     .main {
-        width: calc(100% - 2rem);
+        width: 100%;
     }
 
     .bar {
