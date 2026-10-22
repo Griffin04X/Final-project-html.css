@@ -6,7 +6,7 @@
 
 @font-face {
     font-family: "Vazirmatn";
-    src: url("../font/Vazirmatn-VariableFont_wght.ttf") format("truetype");
+    src: url("/Fonts/Vazirmatn-VariableFont_wght.ttf") format("truetype");
     font-weight: 100 900;
     font-style: normal;
 }
@@ -86,7 +86,7 @@ body {
 }
 
 .nav__button:hover {
-    color: #2dd4bf;
+    color: #29ccb3;
 }
 
 .actions__button--cart {
