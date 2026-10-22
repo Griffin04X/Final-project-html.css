@@ -297,7 +297,7 @@ hr {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 750px) {
     .bar,
     footer .inner,
     .main {
@@ -310,8 +310,9 @@ hr {
     }
 
     .menu {
-        width: 100%;
-        justify-content: space-between;
+        
+        
+        justify-content: flex-start;
         gap: 8px;
     }
 
@@ -326,8 +327,8 @@ hr {
     }
 
     .actions {
-        width: 100%;
-        justify-content: flex-start;
+        margin-right: 32px;
+        justify-content: flex-end;
     }
 
     .filters {
