@@ -6,7 +6,7 @@
 
 @font-face {
     font-family: "Vazirmatn";
-    src: url("/Fonts/Vazirmatn-VariableFont_wght.ttf") format("truetype");
+    src: url("../Fonts/Vazirmatn-VariableFont_wght.ttf") format("truetype");
     font-weight: 100 900;
     font-style: normal;
 }
@@ -139,7 +139,7 @@ body {
 
 .label_1 {
     flex: 0 0 auto;
-    background-color: greenyellow;
+    background-color:#e8f8f5;
     padding: 2px 4px;
     border-radius: 8px;
     color: #0d7c66;
