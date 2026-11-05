@@ -4,11 +4,38 @@
     padding: 0;
 }
 
+body {
+    direction: rtl;
+    background-color: #f8fafc;
+    font-family: "Vazirmatn", sans-serif;
+    height: 100vh;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
 @font-face {
     font-family: "Vazirmatn";
     src: url("../fonts/Vazirmatn-VariableFont_wght.ttf") format("truetype");
     font-weight: 100 900;
     font-style: normal;
+}
+
+:where(.page--catalog, .page--product) .main {
+    width: 100%;
+    padding-inline: 100px 110px;
+}
+
+.main {
+    flex: 1;
+    min-height: 0;
+    direction: ltr;
+    overflow-y: auto;
+}
+
+.main > * {
+    direction: rtl;
 }
 
 .header {
@@ -191,6 +218,11 @@ footer .inner {
 }
 
 @media (prefers-color-scheme: dark) {
+    body {
+        background-color: #0f172a;
+        color: #fff;
+    }
+
     .header {
         background-color: #1e293b;
     }
