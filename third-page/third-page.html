@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="third-page.css">
-    <link rel="stylesheet" href="../Commons.css/common.css">
+    <link rel="stylesheet" href="../commons/common.css">
+    <link rel="stylesheet" href="./third-page.css">
 </head>
 <body class="page--login">
     <header class="header">
         <div class="bar">
             <div class="menu">
-                <a class="brand" href="/first-page/first-page.html">بازارینو</a>
+                <a class="brand" href="../first-page/first-page.html">بازارینو</a>
                 <nav class="nav" aria-label="ناوبری اصلی">
                     <button class="nav__button">خانه</button>
                     <button class="nav__button">فروشگاه</button>
@@ -21,13 +21,13 @@
             </div>
             <div class="actions">
                 <button class="actions__button actions__button--cart">سبد خرید</button>
-                <a class="actions__button actions__button--login" href="third-page.html">ورود</a>
+                <a class="actions__button actions__button--login" href="./third-page.html">ورود</a>
             </div>
         </div>
     </header>
     <main class="main">
 
-        <form class="card" action="third-page.html" method="post">
+        <form class="card" action="./third-page.html" method="post">
             <h2> حساب کاربری </h2>
               <p> برای خرید سریع تر ,حساب بازاریتو رابسازید </p>
 
@@ -41,7 +41,7 @@
             <input type="password" id="password" placeholder="حداقل 8 کارکتر" name="password" minlength="8" maxlength="64" required>
 
             <label for="confirm-password"> تکرار رمز عبور:</label>
-            <input type="password" id="confirm-password" placeholder=" رمز عبور خود را دوباره وارد کنید" name="password" minlength="8" maxlength="64" required>
+            <input type="password" id="confirm-password" placeholder=" رمز عبور خود را دوباره وارد کنید" name="confirm-password" minlength="8" maxlength="64" required>
 
             <div class="card__actions">
                 <button class="reset"  type="reset"> پاک کردن </button>
